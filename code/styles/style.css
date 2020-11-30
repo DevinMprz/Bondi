@@ -1,0 +1,192 @@
+.start{
+		background-color: #19283F;
+		position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.navbar a{
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #99A9B2;
+}
+.Text{
+		font-family: 'Roboto', sans-serif;
+}
+.TextV{
+	font-family: 'Varela Round', sans-serif;
+}
+.navbar{
+	font-size: 30px;
+	margin-top: 50px;
+	margin-right: 300px;
+	margin-left: 300px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: .5s;
+  	color: #99A9B2;
+}
+.navbar :hover{
+	color: #01BEB9;
+}
+.Template{
+	    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.Taste{
+	color: #FFF;
+		font-family: 'Roboto', sans-serif;
+		font-size: 60px;
+}
+.graphic{
+	margin-top: -50px;
+		color: #A0B1B9;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+}
+.content{
+	    position: absolute;
+		color: #FFF;
+		font-family: 'Roboto', sans-serif;
+		font-size: 30px;
+			    left: 30%;
+			background-color: #FF3150;
+			    border-radius: 20px;
+			    width: 200px;
+			    height: 50px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    color: #FFAF0D;
+			    transition: .2s;
+}
+.content a{
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #99A9B2;
+}
+.content:hover .GetStarted{
+	font-size: 3px;
+	opacity: 0;
+}
+.content:hover{
+	left: 45%;
+		width: 50px;
+}
+.content:hover .GetStarted__back{
+	opacity: 1;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+}
+.GetStarted__back{
+	position: absolute;
+	opacity: 0;
+	color: #FFAF0D;
+		transition: .1s;
+} 
+.GetStarted{
+	color: #FFAF0D;
+	transition: .3s;
+}
+.Servises{
+	margin-top: 53%;
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+	height: 100%;
+	width: 100%;
+}
+.stuff{
+		display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 40px;
+}
+.LogoY{
+	width: 120px;
+}
+/* Some of thease stuff under */
+.StuffText{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.Serv{
+	margin-top: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-self: center;
+	list-style-type: none;
+		counter-reset: li; 
+		font-size: 28px;
+}
+.Li1{
+	color: #FFC501;
+}
+.Serv a:before{
+content: counter(li);
+counter-increment: li;
+	position: absolute;
+	color: rgba(38,206,200,.1);
+	margin-top: -300px;
+	text-align: center;
+	font-size: 300px;
+}
+.preloader{
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 9999;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+}
+.loader{
+	width: 100px;
+	height:	100px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	background-color: #19283F;
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 60px;
+	font-family: 'Yellowtail', cursive;
+
+}
+.done{
+	opacity: 0;
+	visibility: hidden;
+}
+@keyframes spin {
+	0%{
+		transform: translate(-50%,-50%) rotate(0deg);
+	}
+	50%{
+		transform: translate(-50%,-50%) rotate(360deg);
+		border-radius: 50%;
+	}
+	100%{
+		transform: translate(-50%,-50%) rotate(720deg);
+	}
+}
